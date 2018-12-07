@@ -1,0 +1,253 @@
+button {
+  color: rebeccapurple;
+  width: 100px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  font-size: 1em;
+  margin: 20px;
+}
+
+.one {
+  border: 1px solid tomato;
+  color: goldenrod;
+  transition: 2s;
+}
+
+.one:hover {
+  background-color: tomato;
+  color: #fff;
+}
+
+.two {
+  position: relative;
+}
+
+.two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: tomato;
+  transition: 2s;
+}
+
+.two::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background-color: tomato;
+  transition: 2s;
+}
+
+.two:hover::after,
+.two:hover::before {
+  width: 100%;
+}
+
+.three {
+  position: relative;
+  transition: 2s;
+}
+
+.three:hover {
+  color: #fff;
+}
+
+.three::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background-color: tomato;
+  transition: 2s ease-in-out;
+  z-index: -1;
+}
+
+.three:hover::after {
+  height: 100%;
+}
+
+.four {
+  position: relative;
+  transition: 2s;
+}
+
+.four:hover {
+  color: #fff;
+}
+
+.four::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 0;
+  width: 0;
+  transition: 2s;
+  background-color: tomato;
+  z-index: -1;
+}
+
+.four::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  transition: 2s;
+  background-color: tomato;
+  z-index: -1;
+}
+
+.four:hover::after,
+.four:hover::before {
+  height: 100%;
+  width: 100%;
+}
+
+.five {
+  position: relative;
+}
+
+.five::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: tomato;
+  transition: 0.2s;
+}
+
+.five:hover::after {
+  width: 100%;
+}
+
+.five::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 0;
+  background-color: tomato;
+  transition: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.five:hover::before {
+  height: 100%;
+}
+
+.five .five-span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background-color: tomato;
+  transition: 0.2s;
+  transition-delay: 0.4s;
+}
+
+.five:hover .five-span::after {
+  width: 100%;
+}
+
+.five .five-span::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  height: 0;
+  background-color: tomato;
+  transition: 0.2s;
+  transition-delay: 0.6s;
+}
+
+.five:hover .five-span::before {
+  height: 100%;
+}
+
+.six {
+  position: relative;
+  transition: 1s.;
+}
+
+.six:hover {
+  color: #fff;
+}
+
+.six::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  z-index: -1;
+  background-color: tomato;
+  transition: 1s;
+}
+
+.six:hover::after {
+  width: 100%;
+}
+
+.seven {
+  position: relative;
+  border: 1px solid tomato;
+  transition: 0.2s;
+}
+
+.seven:hover {
+  padding-right: 20px;
+}
+
+.seven::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0;
+  border-right-color: tomato;
+  border-bottom-color: transparent;
+  transition: 0.2s;
+}
+
+.seven:hover::after {
+  border-width: 0 25px 25px 0;
+}
+
+.seven::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0;
+  border-right-color: tomato;
+  border-top-color: transparent;
+  transition: 0.2s;
+}
+
+.seven:hover::before {
+  border-width: 25px 25px 0 0;
+}
