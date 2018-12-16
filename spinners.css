@@ -1,0 +1,29 @@
+.spinner1 {
+  position: relative;
+}
+
+.rect1,
+.rect2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  animation: turn 4s linear infinite;
+}
+
+.rect2 {
+  background-color: chocolate;
+  animation-duration: 2s;
+}
+
+@keyframes turn {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
